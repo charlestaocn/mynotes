@@ -56,11 +56,11 @@ Linux的版本尽量使用7.x版本，最好是7.6或者是7.8版本。
 
 去官网找按照的方式
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/76cab4c3cc3c4d079eeb2c7b3e5341bc.png)
+![image.png](resources/images/ec3901db8bc40c84ed619e59f520f6b1_MD5.png)
 
 选择好PGSQL的版本，已经Linux的发行版本
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/4abbc9ca881d42ac9afc1072cf927340.png)
+![image.png](resources/images/47d4d839b373ca6d4d9517018d112b04_MD5.png)
 
 拿到命令，麻也不管，直接扔到Linux中运行即可
 
@@ -127,7 +127,7 @@ PostgreSQL的主要配置放在数据目录下的， **postgresql.conf** 以及 
 /var/lib/pgsql/12/data
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/7f2dff320d07452580be4f5be3fdc3fc.png)
+![image.png](resources/images/cd9c31d9cba6b107ddb1a26dc9145734_MD5.png)
 
 上图可以看到，postgreSQL的核心文件，都属于postgres用户，操作的时候，尽可能的别用root用户，容易玩出坑，尽可能先切换到postgres用户去玩。
 
@@ -142,7 +142,7 @@ PostgreSQL默认情况下不支持远程连接的，这个跟MySQL几乎一样
 
 用户以及对应数据库和连接方式的编写模板
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/63bf19f455a24ac1a2c57feeac91a213.png)
+![image.png](resources/images/18fae56911096d05342411d6928bdffd_MD5.png)
 
 ```
 # 第一块
@@ -159,15 +159,15 @@ method加密方式，这块不用过多关注，直接md5
 host    all             all             0.0.0.0/0               md5
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/ab6693426f514da3be7e4b0d2922290e.png)
+![image.png](resources/images/b269c4d3fd5f640ed343bfd8f843f093_MD5.png)
 
 为了实现远程连接，除了用户级别的这种配置，还要针对服务级别修改一个配置
 
 服务级别的配置在postgresql.conf
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/76a5652aa33b457b9d3822d2c0c76f78.png)发现默认情况下，PGSQL只允许localhost连接，直接配置为*即可解决问题
+![image.png](resources/images/5184a946487e6d02cb56dc0630585ec8_MD5.png)发现默认情况下，PGSQL只允许localhost连接，直接配置为*即可解决问题
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/57eb8a06d22c44a4878145d72a664777.png)
+![image.png](resources/images/d9dda79b600d187906a3c576e3b01148_MD5.png)
 
 记得，为了生效，一定要重启
 
@@ -180,7 +180,7 @@ sudo systemctl restart postgresql-12
 
 查看postgresql.conf文件
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/08f534e0d8eb4004b2018027ef35123c.png)
+![image.png](resources/images/acf3ba48002397dbe8e2d008b09924e9_MD5.png)
 
 postgreSQL默认情况下，只保存7天的日志，循环覆盖。
 
@@ -205,7 +205,7 @@ log_rotation_size = 0
 
 可以直接基于psql查看一些信息，也可以基于psql进入到命令行后，再做具体操作
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/9dc5c685b4834680a17fff01cc0c5a96.png)
+![image.png](resources/images/d801939c33e142c5311b94677c99419d_MD5.png)
 
 可以直接基于psql去玩
 
@@ -215,7 +215,7 @@ log_rotation_size = 0
 下面的图是默认的连接方式
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/4b1bb416762a4cf1b4f90e9a558e97bf.png)
+![image.png](resources/images/91865b306b3cd3e51158883ccf26e088_MD5.png)
 
 后面都基于psql的命令行（客户端）去进行操作
 
@@ -242,9 +242,9 @@ create role 名称 [ [ WITH ] 选项 [ ... ] ]
 create user root with SUPERUSER PASSWORD 'root';
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/07d211e213e4416aba3e28fbebce8da2.png)
+![image.png](resources/images/1b1cedb8b0ac6d6d3f00782c22a938c9_MD5.png)
 
-退出psql命令行![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/cee90731a15340e4a3b5994281b3d6c4.png)
+退出psql命令行![image.png](resources/images/fc0ea7077eb71cdbb0bdeeb750c6efa0_MD5.png)
 
 编写psql命令尝试去用root用户登录
 
@@ -258,11 +258,11 @@ psql -h 192.168.11.32 -p 5432 -U root -W
 create database root;
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/28fd44d493294033a787dff28fe95606.png)
+![image.png](resources/images/a97a259a109293bf2fada780c9353bc5_MD5.png)
 
 可以在不退出psql的前提下，直接切换数据库
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/93f0889fa28d4abaad26355d13765acd.png)
+![image.png](resources/images/ac73b4e7c936708068d4e75e42659c93_MD5.png)
 
 也可以退出psql，重新基于psql命令去切换用户以及数据库
 
@@ -275,7 +275,7 @@ create database root;
 
 如果要查看现在的全部用户信息
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/8cd4b44b799a4378876c286f3cfcc195.png)
+![image.png](resources/images/2069bb0f1f68816db8cb723dd5201f53_MD5.png)
 
 ## 5.2 权限操作
 
@@ -283,7 +283,7 @@ create database root;
 
 | 逻辑结构图                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------ |
-| ![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/196175a131424561afd26fcf2a1715ad.png) |
+| ![image.png](resources/images/8b05a322da1e50c4e8c2f16da4daa551_MD5.png) |
 
 可以看到PGSQL一个数据库中有多个schema，在每个schema下都有自己的相应的库表信息，权限粒度会比MySQL更细一些。
 
@@ -347,7 +347,7 @@ create table laozheng.test(id int);
 -- 想构建laozheng用户时，发现postgreSQL的所有文件拥有者和所属组都是postgres，并且能操作的只有拥有者
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/9ecc934fa9214d1baece7a64b818d551.png)
+![image.png](resources/images/e8583b550eeab6a0693a6a774f61739d_MD5.png)
 
 ```
 -- 基于上述问题，不采用本地连接即可。
@@ -359,7 +359,7 @@ psql -h 192.168.11.32 -p 5432 -U laozheng -W
 -- 查看到当前database下有两个schema
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/ae0abd66900c49dba2002ca54016051d.png)
+![image.png](resources/images/9b81172337bf493ca8279741906517d3_MD5.png)
 
 这种权限的赋予方式，可以用管理员用户去构建整体表结构，如此一来，分配指定用户，赋予不同的权限，这样一来，就不怕用户误操了。
 
@@ -379,19 +379,19 @@ https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.9/windows/
 
 打开pgAdmin
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/f2b5ae802401454ca309e507280bdb78.png)
+![image.png](resources/images/13fb3a16b1cae8ff943d401d72afdcce_MD5.png)
 
 添加一个新的连接
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/8903f72b03f649319cf2ff8dd15ca343.png)
+![image.png](resources/images/93b9bd6645839d44fb63423fa17f39ef_MD5.png)
 
 直接save，就可以连接到老郑的信息
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/1a2be4f248df474383b224dda23e0b17.png)
+![image.png](resources/images/46f7a0bd5413e38bf50a8c73c12867f8_MD5.png)
 
 可以切换语言
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/baf2c087b92c4936b40903d64741defb.png)
+![image.png](resources/images/213440f83fa1dea67928a4934e12b08a_MD5.png)
 
 # 七、数据类型
 
@@ -636,7 +636,7 @@ insert into test (weekday) values ('Mon');
 insert into test (weekday) values ('Fri');
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/4645410ba2f0470db94a3d39428c49e3.png)
+![image.png](resources/images/9d18ea4142c67d3c5a8ad889ce5e9171_MD5.png)
 
 ## 8.8 IP类型
 
@@ -646,11 +646,11 @@ PGSQL支持IP类型的存储，支持IPv4，IPv6这种，甚至Mac内种诡异�
 
 IP校验的效果
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/0b428fa684aa49b590cfcce6612b1723.png)
+![image.png](resources/images/a72273b537b8b20eb2c1b0832d690661_MD5.png)
 
 IP也支持范围查找。
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/ed070a62ac66473cbfc742a1a696a8ce.png)
+![image.png](resources/images/267e84f4a1fcadc3fa4cbd13cdc5d0af_MD5.png)
 
 ## 8.9 JSON&JSONB类型
 
@@ -699,7 +699,7 @@ JSON中key对应的value的数据类型
   ```
   select '[9,true,null,"我是字符串"]'::JSON;
   ```
-* JSON对象![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/1aa3e0362eb04b7b97d581f9a01e11bd.png)
+* JSON对象![image.png](resources/images/75f46201c0d5a55f592dbce34eda1f7d_MD5.png)
   ```
   select '{"name": "张三","age": 23,"birthday": "2011-11-11","gender": null}'::json;
   select '{"name": "张三","age": 23,"birthday": "2011-11-11","gender": null}'::jsonb;
@@ -719,7 +719,7 @@ JSON中key对应的value的数据类型
   '{"name":               "张三"             ,"age": 23,"birthday": "2011-11-11","gender": null}')
   select * from test;
   ```
-* 构建索引的效果![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/8836eb90caa244e3936eb94cad67c0d6.png)
+* 构建索引的效果![image.png](resources/images/b07c8d4c3cfd30b0b6bb144a71bc9c45_MD5.png)
   ```
   create index json_index on test(info);
   create index jsonb_index on test(infob);
@@ -987,7 +987,7 @@ $$ language plpgsql;
 
 开始构建触发器，在学生信息表删除时，执行前面声明的触发器函数
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/ae7b6b43ec2147e292d6d719941115dd.png)
+![image.png](resources/images/a09200233268eda2547ebf85a2304c6a_MD5.png)
 
 ```sql
 CREATE [ OR REPLACE ] [ CONSTRAINT ] TRIGGER name { BEFORE | AFTER | INSTEAD OF } { event [ OR ... ] }
@@ -1038,7 +1038,7 @@ delete from student where id = 1;
 select pg_relation_filepath('student');
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/a76f3fa369ab44dda396ca5c9de29cba.png)
+![image.png](resources/images/56f5439cd3b6047d8147c299bed03185_MD5.png)
 
 这个位置是在$PG_DATA后的存放地址
 
@@ -1052,18 +1052,18 @@ $PG_DATA == /var/lib/pgsql/12/data/
 
 构建表空间，指定数据存放位置
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/4ad113dc7b0349c4ab415b9aa87d391b.png)
+![image.png](resources/images/27a61c58abbd95b4cfdfe09db9d77d1b_MD5.png)
 
 ```
 -- 构建表空间,构建表空间需要用户权限是超级管理员，其次需要指定的目录已经存在
 create tablespace tp_test location '/var/lib/pgsql/12/tp_test';
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/e2adf71e93544739afb7cf162dc2e465.png)
+![image.png](resources/images/6ed9b4552cc728968e2fe5705b4ff680_MD5.png)
 
 构建数据库，以及表，指定到这个表空间中
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/17ef9d41f05743739e6341a6d5e1d0af.png)
+![image.png](resources/images/b3c775fec4c398162d891d01c2f6f9a1_MD5.png)
 
 其实指定表空间的存储位置后，PGSQL会在$PG_DATA目录下存储一份，同时在咱们构建tablespace时，指定的路径下也存储一份。
 
@@ -1076,7 +1076,7 @@ create tablespace tp_test location '/var/lib/pgsql/12/tp_test';
 
 进一步会发现，其实在PGSQL的默认目录下，存储的是一个link，连接文件，类似一个快捷方式
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/34a5b492fc7d474ca7994d5ccccf6d5c.png)
+![image.png](resources/images/70ff079a9d9663103f28d40dda8de069_MD5.png)
 
 ## 9.4 视图
 
@@ -1086,7 +1086,7 @@ create tablespace tp_test location '/var/lib/pgsql/12/tp_test';
 
 视图对于开发来说，就是一条SQL语句。
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/69fd09baf97e4416aec3e8201feedc62.png)
+![image.png](resources/images/28022335f26f3a9ab964c924e0f7cf1c_MD5.png)
 
 在PGSQL中，简单（单表）的视图是允许写操作的。
 
@@ -1115,7 +1115,7 @@ select * from vw_student_score;
 update vw_student_score set math_score =999 where id = 2;
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/1468eac56ade4fbab9bc1d941c8bd2da.png)
+![image.png](resources/images/01072e10ff6757d80ce307f3df27401e_MD5.png)
 
 ## 9.5 索引
 
@@ -1142,7 +1142,7 @@ GIN索引：针对字段的多个值的类型，比如数组类型。
 
 ### 9.5.3 创建索引看效果
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/3b4ff875c0194b5fa27e38530fc2df95.png)
+![image.png](resources/images/b6d1e93ec46fd77c106a63b3f128cbff_MD5.png)
 
 准备大量测试数据，方便查看索引效果
 
@@ -1238,7 +1238,7 @@ But，有好处就有坏处，更新时间不太好把控。 如果更新频繁�
 
 look 一下语法。
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/b2cca231588c43c9ba552dc7aa417db8.png)
+![image.png](resources/images/5725b97dd1e2e4d40cfb45d6f33e48b5_MD5.png)
 
 干活！
 
@@ -1311,7 +1311,7 @@ PostgreSQL相比于其他数据，有一个比较大的优化，DDL也可以包�
 
 可以基于关闭PostgreSQL的自动提交事务来进行操作。
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/e911b0468569428b863b5395fc8dd2b0.png)
+![image.png](resources/images/da2a081d4d9dd9b7da53d5637a27db4e_MD5.png)
 
 但是上述方式比较麻烦，传统的方式。
 
@@ -1398,7 +1398,7 @@ PGSQL在老版本中，只有两个隔离级别，读已提交和串行化。在
 * xmin：给当前事务分配的数据版本。如果有其他事务做了写操作，并且提交事务了，就给xmin分配新的版本。
 * xmax：当前事务没有存在新版本，xmax就是0。如果有其他事务做了写操作，未提交事务，将写操作的版本放到xmax中。提交事务后，xmax会分配到xmin中，然后xmax归0。
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/557e8ed0b67c4ee4a849537d380c6aee.png)
+![image.png](resources/images/c0a4eb5bffb4560e3990f6942d5b5b55_MD5.png)
 
 基于上图的操作查看一波效果
 
@@ -1454,7 +1454,7 @@ PostgreSQL中也提供了页锁，咨询锁，But，这个不需要关注，他�
 
 表锁的实现：
 
-先查看一波语法![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/c633685c9dee4d5c8b3f0be00082a827.png)
+先查看一波语法![image.png](resources/images/5cd1d8e17e13a761afef977fbd82a5f7_MD5.png)
 
 就是基于LOCK开启表锁，指定表的名字name，其次在MODE中指定锁的模式，NOWAIT可以指定是否在没有拿到锁时，一致等待。
 
@@ -1535,7 +1535,7 @@ commit;
 
 查看一波WAL日志：
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/454b1e7dea28432c903d9441888d935a.png)
+![image.png](resources/images/2cf71c0ada2366555062f88c16481d5a_MD5.png)
 
 这些就是归档日志
 
@@ -1566,7 +1566,7 @@ wal_level = replica
 fsync = on
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/4d17ad175581412ca336491fac8495a3.png)
+![image.png](resources/images/4a4743e966a6c92c6a1047f8020f6110_MD5.png)
 
 ```
 # 开启归档操作
@@ -1575,7 +1575,7 @@ archive_mode = on
 archive_command = 'test ! -f /archive/%f && cp %p /archive/%f'
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/5837d178562f4bd1a7ae165ce0279617.png)
+![image.png](resources/images/83a11e398b692faedb44a778c64275f6_MD5.png)
 
 **修改完上述配置文件后，记得重启postgreSQL进程，才会生效！！！！**
 
@@ -1606,7 +1606,7 @@ pg_dump这种备份，不会造成用户对数据的操作出现阻塞。
 
 查看一波命令：
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/161b0a1f8e964025ba06ea0fef7c8a90.png)
+![image.png](resources/images/535c0dabecb22461ab4e1f575e14f003_MD5.png)
 
 这个命令从三块去看：http://postgres.cn/docs/12/app-pgdump.html
 
@@ -1618,11 +1618,11 @@ pg_dump这种备份，不会造成用户对数据的操作出现阻塞。
 
 备份老郑库中的全部数据。
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/ffc85c98ffeb47e2807ce09713822089.png)
+![image.png](resources/images/8c3e3eefe1faac8f622b75e9dc0089a1_MD5.png)
 
 删除当前laozheng库中的表等信息，然后恢复数据
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/4a9ccc1f12db4835afa6ad121a499c01.png)
+![image.png](resources/images/b93e87a4f1ec7f83d5a486541b0956f6_MD5.png)
 
 ---
 
@@ -1643,7 +1643,7 @@ pg_basebackup会做两个事情、
 
 查看一波pg_basebackup命令
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/d88fec3d4a9d4c68a7d0bdab95fb51cb.png)
+![image.png](resources/images/54eaa238763629925c4287e12a33879e_MD5.png)
 
 先准备一个pg_basebackup的备份命令
 
@@ -1664,19 +1664,19 @@ pg_basebackup -D /pg_basebackup -Ft -Pv -Upostgres -h 192.168.11.32 -p 5432 -R
   mkdir /pg_basebackup
   chown -R postgres. /pg_basebackup/
   ```
-* 给postgres用户提供replication的权限，修改pg_hba.conf，记得重启生效![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/84c492f3d74e4ff1af40238f4419a500.png)
+* 给postgres用户提供replication的权限，修改pg_hba.conf，记得重启生效![image.png](resources/images/bfa01fc36ab05e947707e30c0ce71ab3_MD5.png)
 * 执行备份
   ```
   pg_basebackup -D /pg_basebackup -Ft -Pv -Upostgres -h 192.168.11.32 -p 5432 -R
   ```
-* 需要输入postgres的密码，这里可以设置，重新备份。![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/ab3f9e3db3ad4f769499eaf50a29d806.png)
-* 执行备份![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/232a538ba0604be5a7bbcb6f9649a728.png)![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/3bc6360d43664e8eb9fed78551507cff.png)
+* 需要输入postgres的密码，这里可以设置，重新备份。![image.png](resources/images/cc59c4f8bbbb993532251d458417fd32_MD5.png)
+* 执行备份![image.png](resources/images/cf5b9441826eb927f269560f12dfd29d_MD5.png)![image.png](resources/images/e2f086c1dbb3cb351d4377d62d78c04a_MD5.png)
 
 ## 13.3 物理恢复（归档+物理）
 
 模拟数据库崩盘，先停止postgresql服务，然后直接删掉data目录下的全部内容
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/3a608201df65426c879397aa42ca569a.png)
+![image.png](resources/images/ece83dd8ea34aa86377906276dc02d1b_MD5.png)
 
 将之前备份的两个文件准备好，一个base.tar，一个pg_wal.tar
 
@@ -1684,9 +1684,9 @@ pg_basebackup -D /pg_basebackup -Ft -Pv -Upostgres -h 192.168.11.32 -p 5432 -R
 
 第二步：将pg_wal.tar中的内容，全部解压到 **/archive** 目录下
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/0aa71a31879044f3a91e18d59d2ada42.png)
+![image.png](resources/images/a6e14905a571e650884b3534099f1bba_MD5.png)
 
-第三步：在postgresql.auto.conf文件中，指定归档文件的存储位置，以及恢复数据的方式![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/af510e295f324f1fa2fd4f8daa21f997.png)
+第三步：在postgresql.auto.conf文件中，指定归档文件的存储位置，以及恢复数据的方式![image.png](resources/images/be05c014996e71938ea8d78cc08bc59f_MD5.png)
 
 第四步：启动postgresql服务
 
@@ -1742,7 +1742,7 @@ delete from t3;
 
 将当前服务的数据全部干掉，按照之前的全备恢复的套路先走着
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/d88780d23c3f4242838d3eea6c940649.png)
+![image.png](resources/images/f439fb8e2c9c04ea4be2dc1cef3e778e_MD5.png)
 
 然后将全备的内容中的base.tar扔data目录下，归档日志也扔到/archive位置。
 
@@ -1758,9 +1758,9 @@ pg_waldump
 /usr/pgsql-12/bin/pg_waldump
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/8f03f2d6f8504c14929ae94ea01c0cfa.png)
+![image.png](resources/images/1745bc2ed5173383c10e6aa3168011c6_MD5.png)
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/7c8c722149394ba6b2164e6405f0ab92.png)
+![image.png](resources/images/0affe2c3b487538a678c3f3b0b09e45b_MD5.png)
 
 6、修改data目录下的恢复数据的方式
 
@@ -1770,15 +1770,15 @@ pg_waldump
 
 基于提供的配置例子，如何指定事务id
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/7eee8b46edbf4232866ef06cb99f45d5.png)
+![image.png](resources/images/01ac9d5cc9f55826914b174d8ff90986_MD5.png)
 
 修改postgresql.auto.conf文件指定好事务ID
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/a9af4efd90a244289d829a22a83d234a.png)
+![image.png](resources/images/103e2f92977d3f91b86604ad313b234d_MD5.png)
 
 7、启动postgreSQL服务，查看是否恢复到指定事务ID
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/3db16b30d57f472489b5294b42a56aad.png)
+![image.png](resources/images/53420a33ec47fdb44140fc8bd22046a9_MD5.png)
 
 8、记得执行会后的函数，避免无法执行写操作
 
@@ -1817,13 +1817,13 @@ yum -y install pgloader
 
 **记住，PostgreSQL的数据库需要提前构建好才可以！！！！**
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/49c3a1cda07d471faa6f512a678a60d5.png)
+![image.png](resources/images/def2372e6d479df95a1c9c607e1f2881_MD5.png)
 
 5、执行脚本，完成数据迁移
 
 先确认pgloader命令可以使用
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/25e9ae8ccc184a32a8eef97e47d212b7.png)
+![image.png](resources/images/dd426a0cd1e49fccbc8398cb6dfc1863_MD5.png)
 
 执行脚本：
 
@@ -1831,7 +1831,7 @@ yum -y install pgloader
 pgloader 刚刚写好的脚本文件
 ```
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/9a31fa692c33483589366fc36bbb9ab2.png)
+![image.png](resources/images/d28bacd0b82c1a6a2e648303f222fc82_MD5.png)
 
 # 十五、主从操作
 
@@ -1864,15 +1864,15 @@ select * from t1;
 
 修改 **pg_hba.conf** 文件
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/8cef483420ca4233ae1043a4a343362f.png)
+![image.png](resources/images/2573c07cb6c4c849372c31b59340773d_MD5.png)
 
 修改 **postgresql.conf** 文件
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/f0cd76ca47cf4fc1926655cc1bd53023.png)
+![image.png](resources/images/6ed1296812bc67c2654a21c229e8cd47_MD5.png)
 
 提前构建好归档日志和备份目录，并且设置好拥有者
 
-![image.png](https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2746/1668770654044/99c3abbb9c98413ea16c2a80b5ed2928.png)
+![image.png](resources/images/21c2c2ca098b716fdecafc7e8a123701_MD5.png)
 
 重启PostgreSQL服务
 

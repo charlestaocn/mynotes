@@ -3,7 +3,7 @@
   "ignoredExt": "cnt|php|htm|html",
   "processAll": true,
   "useCaptions": true,
-  "pathInTags": "baseFileName",
+  "pathInTags": "onlyRelative",
   "downUnknown": false,
   "saveAttE": "nextToNoteS",
   "realTimeUpdate": true,

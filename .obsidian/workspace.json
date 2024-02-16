@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5b03037869504570",
+        "id": "1f6ffe69c0b6bd31",
         "type": "tabs",
         "children": [
           {
-            "id": "87c702c2cb73c5b1",
+            "id": "51e6c249a0985fdc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "postgreSql/PostgreSQL.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "postgreSql/PostgreSQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "postgreSql/PostgreSQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "postgreSql/PostgreSQL.md"
+              }
             }
           }
         ],
@@ -148,8 +156,26 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "87c702c2cb73c5b1",
+  "active": "51e6c249a0985fdc",
   "lastOpenFiles": [
+    "postgreSql/resources/images/21c2c2ca098b716fdecafc7e8a123701_MD5.png",
+    "postgreSql/resources/images/6ed1296812bc67c2654a21c229e8cd47_MD5.png",
+    "postgreSql/resources/images/2573c07cb6c4c849372c31b59340773d_MD5.png",
+    "postgreSql/resources/images/d28bacd0b82c1a6a2e648303f222fc82_MD5.png",
+    "postgreSql/resources/images/dd426a0cd1e49fccbc8398cb6dfc1863_MD5.png",
+    "postgreSql/resources/images/def2372e6d479df95a1c9c607e1f2881_MD5.png",
+    "postgreSql/resources/images/53420a33ec47fdb44140fc8bd22046a9_MD5.png",
+    "postgreSql/resources/images/103e2f92977d3f91b86604ad313b234d_MD5.png",
+    "postgreSql/resources/images/01ac9d5cc9f55826914b174d8ff90986_MD5.png",
+    "postgreSql/resources/images/0affe2c3b487538a678c3f3b0b09e45b_MD5.png",
+    "postgreSql/resources/images/1745bc2ed5173383c10e6aa3168011c6_MD5.png",
+    "java并发/并发编程完整版-03.md",
+    "java并发/并发扣数、双写不一致.md",
+    "java并发/并发编程完整版-02.md",
+    "postgreSql/PostgreSQL.md",
+    "postgreSql/resources/images",
+    "postgreSql/resources",
+    "redis/持久化/混合持久化.md",
     "jvm/resources/images",
     "jvm/resources",
     "MongoDB/使用手册.md",
@@ -157,18 +183,10 @@
     "redis/缓存击穿、穿透、雪崩概念及解决方案.md",
     "redis/慢查询、Pipeline、事务、Lua.md",
     "redis/分布式锁.md",
-    "mysql/resources/images/12ba0def0f092a0016428dcac8f5abc0_MD5.png",
-    "mysql/_resources/聚簇索引、非聚簇索引/mysql聚簇索引.png",
-    "mysql/_resources/聚簇索引、非聚簇索引/mysqlindex.png",
-    "postgreSql/PostgreSQL.md",
     "mysql/mysql日志.md",
-    "mysql/img.png",
     "mysql/聚簇索引、非聚簇索引.md",
     "mysql/resources/images",
     "mysql/resources",
-    "mysql/_resources/mysqlindex.png",
-    "mysql/mysqlindex.png",
-    "mysql/_resources/聚簇索引、非聚簇索引/bf6fe4529fa689d027aeef9b064a8fd4_MD5.png",
     "mysql/_resources/聚簇索引、非聚簇索引",
     "mysql/_resources",
     "io/0拷贝 (CPU进行的数据拷贝次数 DMA是需要进行拷贝的).md",
@@ -179,23 +197,13 @@
     "rocketmq/EventBridge.md",
     "rocketmq/index.md",
     "rocketmq/事务.md",
-    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/d1dadc687a6949c6d471cce0df838180_MD5.png",
     "rocketmq/有序发送消费.md",
     "java并发/volatile and synchronized.md",
     "postgreSql",
-    "java并发/并发编程完整版-03.md",
-    "java并发/并发扣数、双写不一致.md",
     "jvm/garbage collector (gc).md",
     "jvm/G1.md",
     "jvm/runtime data area.md",
-    "jvm/arthas.md",
-    "SpringCloud/nacos/nacos-client.md",
-    "redis/_resources/reactive redis/72d5dec2f0f328609c403c0a22bfe298_MD5.jpeg",
     "redis/_resources/reactive redis",
-    "截屏2024-02-04 21.55.07.png",
-    "javac编译原理/编译原理提纲.docx",
-    "javac编译原理/编译原理提纲.pdf",
-    "someting/Synchronized.html",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
