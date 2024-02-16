@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "68df6732f2234859",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b03037869504570",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87c702c2cb73c5b1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ba48e40398f14807",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ca28efdd52f5d63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3d01f8f3f28ca7e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e739c28b5f5d2b89",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "598ac29015a348bb",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "400d774c5351154d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 256.5
+  },
+  "right": {
+    "id": "355b033f734c8ed9",
+    "type": "split",
+    "children": [
+      {
+        "id": "f48846236cb72adb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f57d23be605e89e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "52d7f8fef4c90812",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3c47669abd4bd81c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e0e5390ac941f4fa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
+    }
+  },
+  "active": "87c702c2cb73c5b1",
+  "lastOpenFiles": [
+    "jvm/resources/images",
+    "jvm/resources",
+    "MongoDB/使用手册.md",
+    "MongoDB/使用场景.md",
+    "redis/缓存击穿、穿透、雪崩概念及解决方案.md",
+    "redis/慢查询、Pipeline、事务、Lua.md",
+    "redis/分布式锁.md",
+    "mysql/resources/images/12ba0def0f092a0016428dcac8f5abc0_MD5.png",
+    "mysql/_resources/聚簇索引、非聚簇索引/mysql聚簇索引.png",
+    "mysql/_resources/聚簇索引、非聚簇索引/mysqlindex.png",
+    "postgreSql/PostgreSQL.md",
+    "mysql/mysql日志.md",
+    "mysql/img.png",
+    "mysql/聚簇索引、非聚簇索引.md",
+    "mysql/resources/images",
+    "mysql/resources",
+    "mysql/_resources/mysqlindex.png",
+    "mysql/mysqlindex.png",
+    "mysql/_resources/聚簇索引、非聚簇索引/bf6fe4529fa689d027aeef9b064a8fd4_MD5.png",
+    "mysql/_resources/聚簇索引、非聚簇索引",
+    "mysql/_resources",
+    "io/0拷贝 (CPU进行的数据拷贝次数 DMA是需要进行拷贝的).md",
+    "rocketmq/图解RocketMQ消息发送和存储流程.md",
+    "rocketmq/producer.md",
+    "rocketmq/nameserv.md",
+    "rocketmq/延迟消费.md",
+    "rocketmq/EventBridge.md",
+    "rocketmq/index.md",
+    "rocketmq/事务.md",
+    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/d1dadc687a6949c6d471cce0df838180_MD5.png",
+    "rocketmq/有序发送消费.md",
+    "java并发/volatile and synchronized.md",
+    "postgreSql",
+    "java并发/并发编程完整版-03.md",
+    "java并发/并发扣数、双写不一致.md",
+    "jvm/garbage collector (gc).md",
+    "jvm/G1.md",
+    "jvm/runtime data area.md",
+    "jvm/arthas.md",
+    "SpringCloud/nacos/nacos-client.md",
+    "redis/_resources/reactive redis/72d5dec2f0f328609c403c0a22bfe298_MD5.jpeg",
+    "redis/_resources/reactive redis",
+    "截屏2024-02-04 21.55.07.png",
+    "javac编译原理/编译原理提纲.docx",
+    "javac编译原理/编译原理提纲.pdf",
+    "someting/Synchronized.html",
+    "未命名.canvas",
+    "未命名 1.canvas"
+  ]
+}
