@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1f6ffe69c0b6bd31",
+        "id": "4f7a41e6f1cbcceb",
         "type": "tabs",
         "children": [
           {
-            "id": "51e6c249a0985fdc",
+            "id": "af4bd29249820271",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "postgreSql/PostgreSQL.md",
-                "mode": "source",
-                "source": false
+                "file": "someting/线上故障分析.pdf"
               }
             }
           }
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "postgreSql/PostgreSQL.md",
+                "file": "someting/线上故障分析.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "postgreSql/PostgreSQL.md",
+                "file": "someting/线上故障分析.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "postgreSql/PostgreSQL.md"
+                "file": "someting/线上故障分析.pdf"
               }
             }
           }
@@ -143,7 +141,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,54 +154,54 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "51e6c249a0985fdc",
+  "active": "af4bd29249820271",
   "lastOpenFiles": [
-    "postgreSql/resources/images/21c2c2ca098b716fdecafc7e8a123701_MD5.png",
-    "postgreSql/resources/images/6ed1296812bc67c2654a21c229e8cd47_MD5.png",
-    "postgreSql/resources/images/2573c07cb6c4c849372c31b59340773d_MD5.png",
-    "postgreSql/resources/images/d28bacd0b82c1a6a2e648303f222fc82_MD5.png",
-    "postgreSql/resources/images/dd426a0cd1e49fccbc8398cb6dfc1863_MD5.png",
-    "postgreSql/resources/images/def2372e6d479df95a1c9c607e1f2881_MD5.png",
-    "postgreSql/resources/images/53420a33ec47fdb44140fc8bd22046a9_MD5.png",
-    "postgreSql/resources/images/103e2f92977d3f91b86604ad313b234d_MD5.png",
-    "postgreSql/resources/images/01ac9d5cc9f55826914b174d8ff90986_MD5.png",
-    "postgreSql/resources/images/0affe2c3b487538a678c3f3b0b09e45b_MD5.png",
-    "postgreSql/resources/images/1745bc2ed5173383c10e6aa3168011c6_MD5.png",
-    "java并发/并发编程完整版-03.md",
-    "java并发/并发扣数、双写不一致.md",
-    "java并发/并发编程完整版-02.md",
-    "postgreSql/PostgreSQL.md",
-    "postgreSql/resources/images",
-    "postgreSql/resources",
-    "redis/持久化/混合持久化.md",
-    "jvm/resources/images",
-    "jvm/resources",
+    "someting/线上故障分析.pdf",
+    "答案.md",
     "MongoDB/使用手册.md",
     "MongoDB/使用场景.md",
-    "redis/缓存击穿、穿透、雪崩概念及解决方案.md",
+    "未命名",
+    "redis/使用相关.md",
+    "redis/事务.md",
+    "redis/持久化/aof( AppendOnlyFile ).md",
+    "io/0拷贝资料.md",
+    "redis/数据结构/hashtable 存储类型 字典实现哈希对象.md",
+    "redis/数据结构/ziplist.md",
+    "redis/数据结构/总数据结构.md",
     "redis/慢查询、Pipeline、事务、Lua.md",
+    "redis/缓存击穿、穿透、雪崩概念及解决方案.md",
     "redis/分布式锁.md",
-    "mysql/mysql日志.md",
-    "mysql/聚簇索引、非聚簇索引.md",
-    "mysql/resources/images",
-    "mysql/resources",
-    "mysql/_resources/聚簇索引、非聚簇索引",
-    "mysql/_resources",
-    "io/0拷贝 (CPU进行的数据拷贝次数 DMA是需要进行拷贝的).md",
-    "rocketmq/图解RocketMQ消息发送和存储流程.md",
-    "rocketmq/producer.md",
-    "rocketmq/nameserv.md",
+    "redis/持久化/rdb.md",
     "rocketmq/延迟消费.md",
-    "rocketmq/EventBridge.md",
-    "rocketmq/index.md",
     "rocketmq/事务.md",
     "rocketmq/有序发送消费.md",
-    "java并发/volatile and synchronized.md",
-    "postgreSql",
-    "jvm/garbage collector (gc).md",
-    "jvm/G1.md",
-    "jvm/runtime data area.md",
-    "redis/_resources/reactive redis",
+    "rocketmq/EventBridge.md",
+    "rocketmq/nameserv.md",
+    "rocketmq/index.md",
+    "rocketmq/图解RocketMQ消息发送和存储流程.md",
+    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/4c3da849d696ca6162c6b5e731db6143_MD5.png",
+    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/8424c4371dabbf9e59b7a07c810dc711_MD5.png",
+    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/d1dadc687a6949c6d471cce0df838180_MD5.png",
+    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/93653298c52ebb44eaf0edc73ccf1504_MD5.png",
+    "SpringCloud/gateway/GateWay的Filter.md",
+    "SpringCloud/gateway/gateway.md",
+    "SpringCloud/sentinel/Sentinel使用和源码分析 文档.md",
+    "SpringCloud/sentinel/sentinel  使用.md",
+    "postgreSql/how to use.beamer.tex",
+    "postgreSql/how to use.html",
+    "mysql/9.MySQL存储引擎-v2.pdf",
+    "postgreSql/使用",
+    "Writerside/topics/detail/NIO/resources/images/f65a6dba37ca348fac5a3a4616ee5710_MD5.png",
+    "Writerside/topics/detail/NIO/resources/images/f1c45709a2e8c6070494b52af46c52bb_MD5.webp",
+    "Writerside/topics/detail/NIO/resources/images",
+    "Writerside/topics/detail/NIO/resources",
+    "Writerside/images/recv1.webp",
+    "Writerside/images/systemio1.png",
+    "Writerside/topics/detail/NIO/多路复用",
+    "Writerside/topics/detail/NIO",
+    "Writerside/topics/detail",
+    "Writerside/images/recv.webp",
+    "Writerside/images/systemio.png",
     "未命名.canvas",
     "未命名 1.canvas"
   ]

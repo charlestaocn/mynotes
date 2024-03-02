@@ -1,18 +1,19 @@
-[[0拷贝资料]]
-### 传统io
+# 0拷贝
+
+[0拷贝资料.md](0%E6%8B%B7%E8%B4%9D%E8%B5%84%E6%96%99.md)
+
+## 传统io
 
 ```java
 while((n = read(diskfd, buf, BUF_SIZE)) > 0)
     write(sockfd, buf , n);
 ```
 
-
 > 两次 DMA 拷贝 两次 CPU 拷贝
-
 
 ![](https://pic1.zhimg.com/80/v2-3475e179de7fd24ea59a1e0b0a0dbf40_720w.webp)
 
-### mmap 地址映射 + write()
+## mmap 地址映射 + write()
 
  **使用 mmap 处理小数据的频繁读写**
 
@@ -27,10 +28,10 @@ while((n = read(diskfd, buf, BUF_SIZE)) > 0)
 
 >dma 进行 2 次拷贝。cpu 进行 1次 拷贝。
 
-![[c00593f20f8e65c1672b3d18a72c89a9_MD5.webp]]
+![](_resources/0拷贝资料/c00593f20f8e65c1672b3d18a72c89a9_MD5.webp)
 
 
-### sendfile 系统方法
+## sendfile 系统方法
 
 >仅限于传输文件所以叫sendfile ,数据不经过应用程序的用户空间
 
@@ -40,7 +41,8 @@ while((n = read(diskfd, buf, BUF_SIZE)) > 0)
   
   >和mmap比少了mmap方法调用的返回和write方法调用。一样的   dma 进行 2 次拷贝。cpu 进行 1次 拷贝。
   
-	![[0ec17ef3471327dd9621443cc75b31c2_MD5.webp]]
+
+![](_resources/0拷贝资料/0ec17ef3471327dd9621443cc75b31c2_MD5.webp)
 	
 	
 ### sendfile+ DMA scatter/gather 
@@ -50,5 +52,4 @@ while((n = read(diskfd, buf, BUF_SIZE)) > 0)
 - 最后由 dma 根据文件描述符直接从  内核缓冲将数据 考到 网卡发送出去。
 
 >	将cpu拷贝数据的过程转换成了传文件描述符。两次dma拷贝 0次cpu拷贝
->
-![[a06466acb7d7d091677e629d8daac3f2_MD5.webp]]
+![](_resources/0拷贝资料/a06466acb7d7d091677e629d8daac3f2_MD5.webp)
