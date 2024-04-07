@@ -4,33 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "4f7a41e6f1cbcceb",
+        "id": "27cca418d4b18244",
         "type": "tabs",
         "children": [
           {
-            "id": "af4bd29249820271",
+            "id": "bda589625e7e7432",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "release-notes",
               "state": {
-                "file": "someting/线上故障分析.pdf"
-              }
-            }
-          },
-          {
-            "id": "a1f33e9ae2a4dcae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "someting/Spring @TransactionalEventListener.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.5.12"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "someting/Spring @TransactionalEventListener.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +108,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "someting/Spring @TransactionalEventListener.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +129,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "someting/Spring @TransactionalEventListener.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -158,22 +141,41 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "a1f33e9ae2a4dcae",
+  "active": "bda589625e7e7432",
   "lastOpenFiles": [
-    "someting/Spring @TransactionalEventListener.md",
-    "someting/线上故障分析.pdf",
-    "答案.md",
-    "MongoDB/使用手册.md",
+    "rabbitmq/start.md",
+    "MongoDB/Spring Data MongoDB Lifecycle Events.md",
     "MongoDB/使用场景.md",
+    "MongoDB/使用手册.md",
+    "redis/lua.md",
+    "rocketmq/nameserv.md",
+    "rocketmq/producer.md",
+    "rabbitmq",
+    "rocketmq/图解RocketMQ消息发送和存储流程.md",
+    "rocketmq/事务.md",
+    "rocketmq/index.md",
+    "rocketmq/EventBridge.md",
+    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/d1dadc687a6949c6d471cce0df838180_MD5.png",
+    "rocketmq/有序发送消费.md",
+    "rocketmq/resources/images",
+    "rocketmq/resources",
+    "rocketmq/延迟消费.md",
+    "someting/线上故障分析.pdf",
+    "someting/Spring @TransactionalEventListener.md",
+    "Pasted image 20240307114922.jpg",
+    "SpringCloud/nacos/resources/images",
+    "SpringCloud/nacos/resources",
+    "SpringCloud/nacos/nacos-client.md",
+    "答案.md",
     "未命名",
     "redis/使用相关.md",
     "redis/事务.md",
@@ -185,36 +187,17 @@
     "redis/慢查询、Pipeline、事务、Lua.md",
     "redis/缓存击穿、穿透、雪崩概念及解决方案.md",
     "redis/分布式锁.md",
-    "redis/持久化/rdb.md",
-    "rocketmq/延迟消费.md",
-    "rocketmq/事务.md",
-    "rocketmq/有序发送消费.md",
-    "rocketmq/EventBridge.md",
-    "rocketmq/nameserv.md",
-    "rocketmq/index.md",
-    "rocketmq/图解RocketMQ消息发送和存储流程.md",
     "rocketmq/_resources/图解RocketMQ消息发送和存储流程/4c3da849d696ca6162c6b5e731db6143_MD5.png",
     "rocketmq/_resources/图解RocketMQ消息发送和存储流程/8424c4371dabbf9e59b7a07c810dc711_MD5.png",
-    "rocketmq/_resources/图解RocketMQ消息发送和存储流程/d1dadc687a6949c6d471cce0df838180_MD5.png",
     "rocketmq/_resources/图解RocketMQ消息发送和存储流程/93653298c52ebb44eaf0edc73ccf1504_MD5.png",
-    "SpringCloud/gateway/GateWay的Filter.md",
-    "SpringCloud/gateway/gateway.md",
-    "SpringCloud/sentinel/Sentinel使用和源码分析 文档.md",
-    "SpringCloud/sentinel/sentinel  使用.md",
     "postgreSql/how to use.beamer.tex",
     "postgreSql/how to use.html",
     "mysql/9.MySQL存储引擎-v2.pdf",
-    "postgreSql/使用",
     "Writerside/topics/detail/NIO/resources/images/f65a6dba37ca348fac5a3a4616ee5710_MD5.png",
     "Writerside/topics/detail/NIO/resources/images/f1c45709a2e8c6070494b52af46c52bb_MD5.webp",
-    "Writerside/topics/detail/NIO/resources/images",
-    "Writerside/topics/detail/NIO/resources",
     "Writerside/images/recv1.webp",
     "Writerside/images/systemio1.png",
-    "Writerside/topics/detail/NIO/多路复用",
-    "Writerside/topics/detail/NIO",
     "Writerside/images/recv.webp",
-    "Writerside/images/systemio.png",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
